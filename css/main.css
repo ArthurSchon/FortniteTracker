@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    height: 100%;
+
+}
+body{
+background-image: url('../images/background.png');
+background-size: cover;
+}
+input#username{
+height: 5%;
+border: 2px dashed orangered;
+border-radius: 15px;
+}
+input#username{
+    margin-bottom: 10px;
+}
+
+label{
+display: flex;
+}
+div#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255,255,255,0.3);
+    width: 50%;
+    margin: 25px auto auto;
+    height: 50%;
+}
+input#btntracker{
+    margin-top: 15px;
+background-color: darkorange;
+border-radius: 100px;
+height: 100px;
+width: 100px;
+box-shadow: 2px 2px 1px black;
+font-size: 100%;
+font-weight: bold;
+
+}
+
+

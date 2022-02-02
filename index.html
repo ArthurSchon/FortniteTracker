@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracker App</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Fornite Tracker</h1>
+        <label for="username"></label><input id="username" type="text" placeholder="Epic username...">
+        <div id="choices">
+            <h2>Platforms</h2>
+            <label>
+                <input class="platform" type="radio" name="pc" value="Pc" checked>
+                Pc
+            </label>
+            <label>
+                <input class="platform" type="radio" name="psn" value="Playstation">
+                Playstation
+            </label>
+            <label>
+                <input class="platform" type="radio" name="xb1" value="Xbox">
+                Xbox
+            </label>
+        </div>
+        <input id="btntracker" type="submit" value="Get tracker">
+    </div>
+    <script src="js/api.js"></script>
+</body>
+</html>
