@@ -7,26 +7,43 @@
 </head>
 <body>
     <div id="container">
-        <h1>Fornite Tracker</h1>
+        <header>
+            <h1>Fornite Tracker</h1>
+        </header>
         <label for="username"></label><input id="username" type="text" placeholder="Epic username...">
         <div id="choices">
             <h2>Platforms</h2>
             <label>
-                <input class="platform" type="radio" name="pc" value="Pc" checked>
+                <input class="platform" type="radio" id="platformpc" name="plateform" value="Pc" checked>
                 Pc
             </label>
             <label>
-                <input class="platform" type="radio" name="psn" value="Playstation">
+                <input class="platform" type="radio" id="platformplay" name="plateform" value="Playstation">
                 Playstation
             </label>
             <label>
-                <input class="platform" type="radio" name="xb1" value="Xbox">
+                <input class="platform" type="radio" id="platformxbox" name="plateform" value="Xbox">
                 Xbox
             </label>
         </div>
         <input id="btntracker" type="submit" value="Get tracker">
+        <div id="containtable">
+        <table>
+            <tr>
+                <th>Wins</th>
+                <th>Win %</th>
+                <th>Kills</th>
+                <th>K/D</th>
+            </tr>
+            <tr>
+                <td id="wins">?</td>
+                <td id="winpourc">?</td>
+                <td id="kills">?</td>
+                <td id="kd">?</td>
+            </tr>
+        </table>
+        </div>
     </div>
     <script src="js/api.js"></script>
 </body>
 </html>
-boubou
