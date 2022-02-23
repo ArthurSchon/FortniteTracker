@@ -11,38 +11,38 @@
             <h1>Fornite Tracker</h1>
         </header>
         <label for="username"></label><input id="username" type="text" placeholder="Epic username...">
-        <div id="choices">
-            <h2>Platforms</h2>
-            <label>
-                <input class="platform" type="radio" id="platformpc" name="plateform" value="Pc" checked>
-                Pc
-            </label>
-            <label>
-                <input class="platform" type="radio" id="platformplay" name="plateform" value="Playstation">
-                Playstation
-            </label>
-            <label>
-                <input class="platform" type="radio" id="platformxbox" name="plateform" value="Xbox">
-                Xbox
-            </label>
+        <span id="error"> Merci de completer votre pseudo </span>
+        <div class="radio">
+            <input class="radio--input" type="radio" value="kbm" name="platform" id="platform_1" checked>
+            <label class="radio--label" for="platform_1">PC</label>
+            <input class="radio--input" type="radio" value="gamepad" name="platform" id="platform_2">
+            <label class="radio--label" for="platform_2">Playstation/Xbox/Switch</label>
+            <input class="radio--input" type="radio" value="touch" name="platform" id="platform_3">
+            <label class="radio--label" for="platform_3">IOS/Android</label>
         </div>
-        <input id="btntracker" type="submit" value="Get tracker">
         <div id="containtable">
-        <table>
-            <tr>
-                <th>Wins</th>
-                <th>Win %</th>
-                <th>Kills</th>
-                <th>K/D</th>
-            </tr>
-            <tr>
-                <td id="wins">?</td>
-                <td id="winpourc">?</td>
-                <td id="kills">?</td>
-                <td id="kd">?</td>
-            </tr>
+        <table class="styled_table">
+            <thead>
+                <tr>
+                    <th>Match played</th>
+                    <th>Wins</th>
+                    <th>Win %</th>
+                    <th>Kills</th>
+                    <th>K/D</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="matchp">?</td>
+                    <td id="wins">?</td>
+                    <td id="winpourc">?</td>
+                    <td id="kills">?</td>
+                    <td id="kd">?</td>
+                </tr>
+            </tbody>
         </table>
         </div>
+        <input id="btntracker" type="submit" value="Get tracker">
     </div>
     <script src="js/api.js"></script>
 </body>

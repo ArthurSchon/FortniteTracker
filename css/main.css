@@ -1,9 +1,16 @@
 html, body {
     height: 100%;
+    overflow-y: hidden;
 }
 body{
     background-image: url('../images/background.png');
     background-size: cover;
+}
+h1{
+    font-size: xxx-large;
+    font-family: "Ink Free", sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid black;
 }
 input#username{
     height: 5%;
@@ -20,35 +27,67 @@ div#container{
     align-items: center;
     background-color: rgba(255,255,255,0.3);
     width: 50%;
-    height: 95%;
+    height: 65%;
     margin: 25px auto auto auto;
-    /*margin: 25px auto auto;*/
 }
 input#btntracker{
-    margin-top: 15px;
-    background: linear-gradient(to right, rgba(170,134,208,0.8), rgba(208,182,228,0.8));
+    margin-top: 8%;
+    background: linear-gradient(to right, rgba(170,134,208,1), rgba(208,182,228,1));
     height: 50px;
     width: 150px;
-    box-shadow: 2px 2px 1px black;
     font-size: 100%;
     font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border: none;
 }
-header{
-    font-size: 200%;
+input#btntracker:hover{
+    border: 1px solid;
+    box-shadow: 1px 1px black;
+    cursor: pointer;
 }
 td,
 th {
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 200%;
+    padding: 12px 15px;
     color: black;
     text-align: center;
+    font-size: x-large;
+    font-family: sans-serif;
 }
 div#containtable{
     margin-top: 25px;
-    border: 1px solid black;
 }
-th{
-    background-color: rgba(0,0,0,0.6);
-    color: white;
+.styled_table{
+    border-collapse: collapse;
+    background-color: #CEAFE5;
+}
+span#error{
+    visibility: hidden;
+    color: red;
+    font-style: italic;
+}
+.radio{
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+    margin: 2rem;
+}
+.radio--input{
+    display: none;
+}
+.radio--input:checked+.radio--label{
+    background: white;
+}
+.radio--label{
+    padding: 8px 14px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #CEAFE5;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.radio--label:not(:last-of-type){
+    border-right: 1px solid black;
 }
