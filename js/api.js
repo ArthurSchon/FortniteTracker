@@ -7,6 +7,7 @@ function affStats(data){
         document.getElementById('kd').innerHTML = data.lifeTimeStats[11]['value'];
     }catch(e){
         console.error(e);
+        document.getElementById('errorplayer').style.visibility = 'visible';
     }
 }
 
@@ -33,7 +34,8 @@ function checkRadioBtn(){
         if (username.length === 0) {
             document.getElementById('error').style.visibility = 'visible';
         } else {
-            document.getElementById('error').style.visibility = 'hidden'
+            document.getElementById('error').style.visibility = 'hidden';
+            document.getElementById('errorplayer').style.visibility = 'hidden';
             return (await fetch(proxyurl + url, {
                 headers: {
                     "TRN-Api-Key": apikey
